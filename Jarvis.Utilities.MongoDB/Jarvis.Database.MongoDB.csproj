@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName></SccProjectName>
+    <SccProvider></SccProvider>
+    <SccAuxPath></SccAuxPath>
+    <SccLocalPath></SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+	  <TargetFramework>net8.0</TargetFramework>
+	  <LangVersion>12.0</LangVersion>
+	  <Nullable>enable</Nullable>
+	  <Description>
+		  CRUD operations for MongoDB databases
+	  </Description>
+	  <Version>1.0.0</Version>
+	  <IncludeContentInPack>true</IncludeContentInPack>
+	  <Authors>Tarek Moghrabi,Elie Sidnawy</Authors>
+	  <Company>Technica-Intl.</Company>
+	  <PackageIcon>Resources\technica_logo.png</PackageIcon>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageLicenseFile>Resources\LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IDataIO.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Bson" Version="2.28.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.28.0" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="Resources\technica_logo.png" Pack="true" PackagePath="Resources\technica_logo.png"></None>
+		<None Include="Resources\LICENSE.txt" Pack="true" PackagePath="Resources\LICENSE.txt"></None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Jarvis.Database.Utils\Jarvis.Database.Utils.csproj" />
+	  <ProjectReference Include="..\Jarvis.Database\Jarvis.Database.csproj" />
+	  <ProjectReference Include="..\Jarvis.Utils\Jarvis.Utils.csproj" />
+	</ItemGroup>
+</Project>

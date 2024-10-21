@@ -1,0 +1,25 @@
+﻿extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+/*Copyright (C) %CreationYear% by Technica International
+/*************************************************************************
+* Programmer: Unknown (%UserName%)
+* Created: %CreationYear%, %CreationMonth%, %CreationDay%, %CreationTime%
+*
+* Technica CONFIDENTIAL
+* _____________________
+* 
+*  [2016] - [2021] Technica International
+*  All Rights Reserved.
+* 
+* NOTICE:  All information contained herein Is, And remains
+* the property of Technica International And its suppliers,
+* if any.  The intellectual And technical concepts contained
+* herein are proprietary to Technica International
+* And its suppliers And may be covered by Foreign Patents,
+* patents in process, And are protected by trade secret Or copyright law.
+* Dissemination of this information Or reproduction of this material
+* Is strictly forbidden unless prior written permission Is obtained
+* from Technica International.
+*
+*************************************************************************
+*/
