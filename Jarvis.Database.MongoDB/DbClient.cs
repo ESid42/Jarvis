@@ -32,7 +32,7 @@ namespace Jarvis.Database.MongoDB
 		/// database settings and the Collection name. <typeparamref name="T"/> is <see cref="Item"/>.
 		/// </summary>
 		/// <param name="info">The <see cref="IDatabaseInfo"/> used to initializes the object.</param>
-		public DbClient(DatabaseInfo info) : base(info)
+		public DbClient(IDatabaseInfo info) : base(info)
 		{
 		}
 
