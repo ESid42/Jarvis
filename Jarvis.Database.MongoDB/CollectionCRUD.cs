@@ -322,7 +322,7 @@ namespace Jarvis.Database.MongoDB
 
 		public Task<IEnumerable<T>> Retrieve()
 		{
-			throw new NotImplementedException();
+			return Retrieve(null);
 		}
 
 		public async Task<bool> Update(T item)
