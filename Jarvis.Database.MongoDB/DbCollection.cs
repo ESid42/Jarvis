@@ -53,7 +53,7 @@ namespace Jarvis.Database.MongoDB
 			//_client = new MongoClient(_settings.ConnectionString);
 			//MongoClientSettings settings = MongoClientSettings.FromConnectionString(_settings.ConnectionString);
 			//_client = new MongoClient(settings);
-			if (_client == null && Info != null && Info.DatabaseInfo is DatabaseInfo info && Info.DatabaseInfo.ConnectionString != null)
+			if (_client == null && Info != null && Info.DatabaseInfo is IDatabaseInfo info && Info.DatabaseInfo.ConnectionString != null)
 			{
 #pragma warning disable IDE0079 // Remove unnecessary suppression
 #pragma warning disable CS0612 // Type or member is obsolete
