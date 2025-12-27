@@ -1,3 +1,5 @@
+using System.Collections.Concurrent;
+
 namespace Jarvis.Utils
 {
     public static class EnumerableExtensions
@@ -25,8 +27,12 @@ namespace Jarvis.Utils
             toAdd.ForEach(x => items = items.Append(x));
             return items;
         }
-
-        public static IEnumerable<IEnumerable<T>> Split<T>(this IEnumerable<T> transactions, int size)
+		public static ConcurrentBag<T> Append<T>(this ConcurrentBag<T> items, IEnumerable<T> toAdd)
+		{
+			toAdd.ForEach(items.Add);
+			return items;
+		}
+		public static IEnumerable<IEnumerable<T>> Split<T>(this IEnumerable<T> transactions, int size)
         {
             List<IEnumerable<T>> res = new();
             if (transactions.Count() <= size)

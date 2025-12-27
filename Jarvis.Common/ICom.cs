@@ -1,4 +1,4 @@
-﻿namespace Jarvis.COM
+﻿namespace Jarvis.Common
 {
     public interface ICom
     {

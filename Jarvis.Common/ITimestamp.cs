@@ -1,4 +1,4 @@
-﻿namespace Jarvis;
+﻿namespace Jarvis.Common;
 
 public interface ITimestamp
 {

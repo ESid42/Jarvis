@@ -1,7 +1,7 @@
 ﻿using Jarvis.Common;
 using Jarvis.Utils;
 
-namespace Jarvis
+namespace Jarvis.Common
 {
     public interface IConnectable
     {
